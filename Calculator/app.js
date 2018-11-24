@@ -23,12 +23,9 @@
     const equal = $class("equal")[0];
 
     const numberArr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    const numberKeyCode = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
     const operatorArr = ['+', '-', '*', '/', '.'];
-    const operatorKeyCode = [107, 109, 106, 111, 110];
 
     let equation = '';
-    let res = 0;
 
     function addClckLis(elem, val) {
         elem.addEventListener("click", function() {
@@ -62,6 +59,7 @@
     }
 
     function calculate() {
+        let res = 0;
         if(lastNotOper()) {
             res = eval(equation);
             equation = res;
