@@ -34,6 +34,10 @@ body {
     border-radius: 7px;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .result {
     display: flex;
     justify-content: flex-end;

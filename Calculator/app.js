@@ -65,7 +65,7 @@
             equation = res;
             setEquation();
         } else {
-            alert("Niste zavrsili jednacinu");
+            alert("Niste zavrsili jednacinu ili nista nijeste unijeli");
         }
     }
 
